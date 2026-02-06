@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <h1>Hello form muskan!</h1>
+      <h1>Hello form react!</h1>
     </>
   )
 }
