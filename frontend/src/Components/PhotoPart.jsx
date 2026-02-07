@@ -3,17 +3,17 @@ import heroImg from "../assets/1.jpg";
 function PhotoPart() {
   return (
     <section
+      id="home"
       className="relative h-[80vh] w-full bg-cover bg-center"
       style={{ backgroundImage: `url(${heroImg})` }}
     >
-      {/* LIGHT OVERLAY – NO BLUR */}
+      {/* LIGHT OVERLAY - NO BLUR */}
       <div className="absolute inset-0 bg-black/25"></div>
 
       {/* CONTENT */}
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-6xl mx-auto px-8 w-full">
           <div className="max-w-xl text-white">
-
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
               Affordable Housing <br /> for a Better Future
             </h1>
@@ -23,15 +23,20 @@ function PhotoPart() {
             </p>
 
             <div className="flex gap-4">
-              <button className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md font-semibold">
+              <a
+                className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md font-semibold"
+                href="#contact"
+              >
                 Get Started
-              </button>
+              </a>
 
-              <button className="bg-white text-blue-900 hover:bg-gray-100 px-6 py-3 rounded-md font-semibold">
+              <a
+                className="bg-white text-blue-900 hover:bg-gray-100 px-6 py-3 rounded-md font-semibold"
+                href="#projects"
+              >
                 View Projects
-              </button>
+              </a>
             </div>
-
           </div>
         </div>
       </div>

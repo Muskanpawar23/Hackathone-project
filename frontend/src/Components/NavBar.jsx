@@ -16,20 +16,31 @@ function NavBar() {
       <ul className="hidden md:flex space-x-8 font-medium">
         {/* ACTIVE */}
         <li className="cursor-pointer border-b-2 border-orange-400 pb-1">
-          Home
+          <a href="#home">Home</a>
         </li>
 
         {/* NORMAL */}
-        <li className="hover:text-orange-400 cursor-pointer">About Us</li>
-        <li className="hover:text-orange-400 cursor-pointer">Projects</li>
-        <li className="hover:text-orange-400 cursor-pointer">Amenities</li>
-        <li className="hover:text-orange-400 cursor-pointer">Contact</li>
+        <li className="hover:text-orange-400 cursor-pointer">
+          <a href="#about">About Us</a>
+        </li>
+        <li className="hover:text-orange-400 cursor-pointer">
+          <a href="#projects">Projects</a>
+        </li>
+        <li className="hover:text-orange-400 cursor-pointer">
+          <a href="#amenities">Amenities</a>
+        </li>
+        <li className="hover:text-orange-400 cursor-pointer">
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
 
       {/* Button */}
-      <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md font-semibold">
+      <a
+        className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md font-semibold"
+        href="#contact"
+      >
         Enquire Now
-      </button>
+      </a>
     </nav>
   );
 }
