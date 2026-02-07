@@ -1,10 +1,12 @@
-import { useState } from 'react'
+import Navbar from './Components/NavBar'
+import PhotoPart from './Components/photoPart'
 import './App.css'
 
 function App() {
   return (
     <>
-      <h1 className='text-3xl font-bold underline bg-red-500'>hello world</h1>
+      <Navbar/>
+      <PhotoPart/>
     </>
   )
 }
