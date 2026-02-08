@@ -1,47 +1,26 @@
+import React from "react";
 import { FaBuilding } from "react-icons/fa";
-
-function NavBar() {
+import { PiHandHeartFill } from "react-icons/pi";
+export const NavBar=()=>{
   return (
-    <nav className="bg-blue-900 text-white px-8 py-4 flex items-center justify-between">
-      
-      {/* Logo + Icon */}
-      <div className="flex items-center gap-2 text-2xl font-bold">
-        <div className="bg-orange-500 p-2 rounded">
-          <FaBuilding className="text-white text-xl" />
-        </div>
-        <span>SUVIDHA</span>
-      </div>
-      
-      {/* Menu */}
-      <ul className="hidden md:flex space-x-8 font-medium">
-        {/* ACTIVE */}
-        <li className="cursor-pointer border-b-2 border-orange-400 pb-1">
-          <a href="#home">Home</a>
-        </li>
+    <>
+      <nav className="p-3 bg-[#262220] fixed w-full z-20 flex">
+          <div className="text-4xl text-[#C3A6A0] text-left flex">
 
-        {/* NORMAL */}
-        <li className="hover:text-orange-400 cursor-pointer">
-          <a href="#about">About Us</a>
-        </li>
-        <li className="hover:text-orange-400 cursor-pointer">
-          <a href="#projects">Projects</a>
-        </li>
-        <li className="hover:text-orange-400 cursor-pointer">
-          <a href="#amenities">Amenities</a>
-        </li>
-        <li className="hover:text-orange-400 cursor-pointer">
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
+                <h1 className="font-medium ">SUVIDHA</h1>
+                <PiHandHeartFill />
+            </div>
 
-      {/* Button */}
-      <a
-        className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md font-semibold"
-        href="#contact"
-      >
-        Enquire Now
-      </a>
-    </nav>
+            
+              <ul className="flex gap-5 p-3 text-[#C3A6A0] justify-end w-full">
+                <li className="">Home</li>
+                <li className="">Service</li>
+                <li className=""> How it Works</li>
+               <li className="">Track Compliaints</li>
+            </ul>
+            
+      </nav>
+    </>
   );
 }
 
